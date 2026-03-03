@@ -1,3 +1,13 @@
-[gd_scene format=3 uid="uid://rq8t1ycd8qcv"]
+[gd_scene load_steps=3 format=3 uid="uid://rq8t1ycd8qcv"]
+
+[ext_resource type="Texture2D" uid="uid://dkkr8s3q4dp03" path="res://icon.svg" id="1_377w7"]
+[ext_resource type="Script" uid="uid://c11m61i1fetht" path="res://Code/Examples/ExampleSprite.gd" id="2_bovvr"]
 
 [node name="Level" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(300, 250)
+scale = Vector2(1.149, 1)
+texture = ExtResource("1_377w7")
+script = ExtResource("2_bovvr")
+_speed = 1000.0
